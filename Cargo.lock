@@ -85,7 +85,7 @@ dependencies = [
 [[package]]
 name = "async-imap"
 version = "0.1.1"
-source = "git+https://github.com/async-email/async-imap#cc24f5d647be18099ef6d45c756505232eb72698"
+source = "git+https://github.com/async-email/async-imap#08cf1afb53ad41af7935cfdd5913fdbe1db7022d"
 dependencies = [
  "async-attributes 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "async-native-tls 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -116,7 +116,7 @@ dependencies = [
 [[package]]
 name = "async-smtp"
 version = "0.1.0"
-source = "git+https://github.com/async-email/async-smtp?branch=feat/update-tls#9f025b7f21bd1e83fd9090cd4e6604e0036fc663"
+source = "git+https://github.com/async-email/async-smtp#d43f50375e6c8306e6e70dc89d3bbe9e13240a8a"
 dependencies = [
  "async-native-tls 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "async-std 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -661,7 +661,7 @@ version = "1.0.0-beta.22"
 dependencies = [
  "async-imap 0.1.1 (git+https://github.com/async-email/async-imap)",
  "async-native-tls 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "async-smtp 0.1.0 (git+https://github.com/async-email/async-smtp?branch=feat/update-tls)",
+ "async-smtp 0.1.0 (git+https://github.com/async-email/async-smtp)",
  "async-std 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "backtrace 0.3.40 (registry+https://github.com/rust-lang/crates.io-index)",
  "base64 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3462,7 +3462,7 @@ dependencies = [
 "checksum async-attributes 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "efd3d156917d94862e779f356c5acae312b08fd3121e792c857d7928c8088423"
 "checksum async-imap 0.1.1 (git+https://github.com/async-email/async-imap)" = "<none>"
 "checksum async-native-tls 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "9f073e25c972058b3a98e74bfbd2297ec0a4b2ed7b9c3f7b1e66d976601b98a8"
-"checksum async-smtp 0.1.0 (git+https://github.com/async-email/async-smtp?branch=feat/update-tls)" = "<none>"
+"checksum async-smtp 0.1.0 (git+https://github.com/async-email/async-smtp)" = "<none>"
 "checksum async-std 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "0bf6039b315300e057d198b9d3ab92ee029e31c759b7f1afae538145e6f18a3e"
 "checksum async-task 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "abdb6048336bef96e8c8fc5573536c5cc5b391fbfd0980349959b7c3f7a40d19"
 "checksum async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)" = "c8df72488e87761e772f14ae0c2480396810e51b2c2ade912f97f0f7e5b95e3c"
