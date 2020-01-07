@@ -2278,7 +2278,7 @@ mod tests {
         let chat = Chat::load_from_db(&t.ctx, chat_id).unwrap();
         let info = chat.get_info(&t.ctx).unwrap();
 
-        // Ensure we can serialise this.
+        // Ensure we can serialize this.
         println!("{}", serde_json::to_string_pretty(&info).unwrap());
 
         let expected = r#"
@@ -2297,7 +2297,7 @@ mod tests {
             }
         "#;
 
-        // Ensure we can deserialise this.
+        // Ensure we can deserialize this.
         let loaded: ChatInfo = serde_json::from_str(expected).unwrap();
         assert_eq!(info, loaded);
     }
