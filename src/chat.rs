@@ -1821,7 +1821,6 @@ impl MuteDuration {
 }
 
 pub fn set_muted(context: &Context, chat_id: u32, duration: MuteDuration) -> Result<(), Error> {
-    let mut success = false;
     ensure!(chat_id > DC_CHAT_ID_LAST_SPECIAL, "Invalid chat ID");
 
     if real_group_exists(context, chat_id)
@@ -1834,10 +1833,7 @@ pub fn set_muted(context: &Context, chat_id: u32, duration: MuteDuration) -> Res
         .is_ok()
     {
         context.call_cb(Event::ChatModified(chat_id));
-        success = true;
-    }
-
-    if !success {
+    } else {
         bail!("Failed to set name");
     }
 
